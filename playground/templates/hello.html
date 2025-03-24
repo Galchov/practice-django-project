@@ -5,5 +5,10 @@
         {% else %}
         <h1>Hello World</h1>
         {% endif %}
+        <ul>
+            {% for item in queryset %}
+            <li>{{ item.id }}</li>
+            {% endfor %}
+        </ul>
     </body>
 </html>
